@@ -4,10 +4,13 @@
 
 :root {
   /* colors  */
-  --primary-main: rgb(10, 6, 65);
+  --primary-main: #043873;
   --background-main: rgb(224 231 255);
-  --background-secondary: rgb(129 140 248);
+  --background-secondary: rgb(191 219 254);
   --primary-medium: rgb(79 70 229);
+
+  --text-slate-800: rgb(30 41 59);
+  --text-slate-600: rgb(71 85 105);
 
   /* ------------------------------- */
   --transition: all 0.3s linear;
@@ -99,14 +102,29 @@ button {
   // padding: 0.5rem 1rem;
   border: none;
 }
-
 // custom styles
+// ----------------------------------------------------------------
+@keyframes rotateFull {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.animation-rotate {
+  animation: rotateFull 1s ease-in-out 0.1s;
+}
+
 .primary-text-color {
   color: var(--primary-main);
 }
 .secondary-background-color {
   background-color: var(--background-secondary);
   color: white;
+}
+.secondary-background-dark {
+  background-color: var(--primary-main);
 }
 
 .sidebar {
@@ -117,4 +135,22 @@ button {
 }
 .sidebar-open {
   left: 0;
+}
+.navigation-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-slate-600);
+  transition: var(--transition);
+  &:hover {
+    color: var(--primary-main);
+    box-shadow: var(--light-shadow);
+  }
+}
+.fa-times-btn {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  &:hover {
+    animation: rotateFull 1s ease-in-out;
+  }
 }

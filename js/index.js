@@ -2,11 +2,13 @@ const sidebar = document.getElementById("sidebar");
 const openSidebar = document.getElementById("open-sidebar");
 const closeSidebar = document.getElementById("close-sidebar");
 
-openSidebar.addEventListener("click", (e) => {
+openSidebar.addEventListener("click", () => {
   sidebar.classList.add("sidebar-open");
-  console.log(sidebar.classList);
+  openSidebar.classList.remove("animation-rotate");
+  closeSidebar.classList.add("animation-rotate");
 });
-closeSidebar.addEventListener("click", (e) => {
+closeSidebar.addEventListener("click", () => {
   sidebar.classList.remove("sidebar-open");
-  console.log(sidebar.classList);
+  openSidebar.classList.add("animation-rotate");
+  closeSidebar.classList.remove("animation-rotate");
 });
