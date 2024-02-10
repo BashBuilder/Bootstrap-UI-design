@@ -143,41 +143,24 @@
           </ul>
         </aside>
 
-        <!-- Instances table -->
+        <!-- Create Instances -->
         <section class="p-2 p-md-5 container mx-auto">
-          <h2 class="mt-5 mb-3 mb-md-5">Instances</h2>
-          <!-- table container  -->
-          <div class="overflow-x-scroll">
-            <table class="table table-hover table-design">
-              <thead>
-                <tr class="table-dark rounded-2">
-                  <th scope="col">Name</th>
-                  <th scope="col">Created At</th>
-                  <th scope="col">Environmental Id</th>
-                  <th scope="col">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="">
-                  <th scope="row">Instance 1</th>
-                  <td>24-01-01</td>
-                  <td>Default</td>
-                  <td class="text-success">Success</td>
-                </tr>
-                <tr>
-                  <th scope="row">Instance 2</th>
-                  <td>2024-01-01</td>
-                  <td>Default</td>
-                  <td class="text-success">Success</td>
-                </tr>
-                <!-- Add more rows as needed -->
-              </tbody>
-            </table>
-            <!-- <button class="custom-button my-4">Create New Instance</button> -->
-          </div>
-          <a href="./createInstance.html" class="custom-button my-4"
-            >Create New Instance</a
-          >
+          <h2>Create An Instance</h2>
+          <form>
+            <div>
+              <label for="">Name</label>
+              <input type="text" class="" />
+            </div>
+            <div>
+              <label for="">Environment</label>
+              <input type="text" class="" />
+            </div>
+
+            <button type="submit" class="custom-button">Create</button>
+            <a href="./newInstance.html" class="custom-button my-4"
+              >Create New Instance</a
+            >
+          </form>
         </section>
       </header>
 
