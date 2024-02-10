@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../css/index.css" />
     <title>Bootstrap UI</title>
   </head>
   <body>
@@ -19,12 +19,12 @@
       <header class="position-relative vh-100 overflow-x-hidden">
         <!-- background Image  -->
         <img
-          src="img/spring1.png"
+          src="../img/spring1.png"
           alt="element"
           class="position-absolute background-canvas opacity-75"
         />
         <img
-          src="img/side.jpg"
+          src="../img/side.jpg"
           alt="element"
           class="position-absolute background-canvas sky-background"
         />
@@ -41,7 +41,11 @@
             ></i>
           </button>
           <div class="d-flex gap-2 align-items-center">
-            <img src="img/logoHolder.png" alt="logo" class="logo img-fluid" />
+            <img
+              src="../img/logoHolder.png"
+              alt="logo"
+              class="logo img-fluid"
+            />
             <h3 class="pt-3 primary-text-color">
               <b>BASH</b>
             </h3>
@@ -51,18 +55,14 @@
             style="max-width: 40rem"
           >
             <li>
-              <a href="#" class="btn navigation-link">Home</a>
+              <a href="../index.html" class="btn navigation-link">Home</a>
             </li>
             <li>
-              <a href="./pages/environment.html" class="btn navigation-link"
+              <a href="./environment.html" class="btn navigation-link"
                 >Environment</a
               >
             </li>
-            <li>
-              <a href="./pages/instances.html" class="btn navigation-link"
-                >Instances</a
-              >
-            </li>
+            <li><a href="#" class="btn navigation-link">Instances</a></li>
           </ul>
           <button
             class="d-flex gap-2 align-items-center justify-content-center"
@@ -92,21 +92,21 @@
           <button class="fa-times-btn" id="close-sidebar">
             <i class="fa fa-times fs-1 text-danger" aria-hidden="true"> </i>
           </button>
-          <ul class="d-flex flex-column z-5 vh-100 sidebar-list">
+          <ul class="d-flex flex-column z-2 vh-100 sidebar-list">
             <li>
-              <a href="#">
+              <a href="../index.html">
                 <i class="fa fa-home" aria-hidden="true"></i>
                 <span class="h6 fw-normal ps-3">Home</span>
               </a>
             </li>
             <li>
-              <a href="./pages/environment.html">
+              <a href="./environment.html">
                 <i class="fa fa-institution" aria-hidden="true"></i>
                 <span class="h6 fw-normal ps-3">Environment</span>
               </a>
             </li>
             <li>
-              <a href="./pages/instances.html">
+              <a href="#">
                 <i class="fa fa-clipboard" aria-hidden="true"></i>
                 <span class="h6 fw-normal ps-3">Instanes</span>
               </a>
@@ -143,22 +143,43 @@
           </ul>
         </aside>
 
-        <!-- the body content section -->
-        <section class="home-content row py-md-5 container-lg mx-auto">
-          <div class="col-md-6 d-flex align-items-center text-center">
-            <h1 class="display-1 fw-medium">
-              Welcome <span class="primary-text-color">Timmy</span>
-            </h1>
-          </div>
-          <div class="col-md-6">
-            <img
-              src="img/welcome.svg"
-              alt="welcome illustration"
-              class="img-fluid"
-            />
+        <!-- Instances table -->
+        <section class="p-2 p-md-5 container mx-auto">
+          <h2 class="mt-5 mb-3 mb-md-5">Instances</h2>
+          <!-- table container  -->
+          <div class="overflow-x-scroll">
+            <table class="table table-hover table-design">
+              <thead>
+                <tr class="table-dark rounded-2">
+                  <th scope="col">Name</th>
+                  <th scope="col">Created At</th>
+                  <th scope="col">Environmental Id</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <th scope="row">Instance 1</th>
+                  <td>24-01-01</td>
+                  <td>Default</td>
+                  <td class="text-success">Success</td>
+                </tr>
+                <tr>
+                  <th scope="row">Instance 2</th>
+                  <td>2024-01-01</td>
+                  <td>Default</td>
+                  <td class="text-success">Success</td>
+                </tr>
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
+            <a href="" class="custom-button my-4">Create New Instance</a>
+            <button class="custom-button my-4">Create New Instance</button>
           </div>
         </section>
       </header>
+
+      <!-- instances section  -->
     </main>
 
     <script src="js/index.js"></script>

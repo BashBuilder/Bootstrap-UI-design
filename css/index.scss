@@ -134,6 +134,16 @@ button {
   background-color: var(--primary-main);
 }
 
+.custom-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: rgb(10, 12, 46);
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
 .logo {
   max-height: 1.7rem;
 }
@@ -186,4 +196,18 @@ aside {
     padding-top: 6rem;
     gap: 3rem;
   }
+}
+.sky-background {
+  opacity: 0.15;
+}
+.home-content {
+  min-height: 31.25rem;
+  height: 85%;
+}
+
+.table-design {
+  // border-radius: 2rem;
+  min-width: 40rem;
+  // background-color: red !important;
+  // padding: 5rem;
 }

@@ -142,6 +142,16 @@ button {
   background-color: var(--primary-main);
 }
 
+.custom-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: rgb(10, 12, 46);
+}
+.custom-button:hover {
+  opacity: 0.9;
+}
+
 .logo {
   max-height: 1.7rem;
 }
@@ -202,4 +212,17 @@ aside ul {
   padding-left: 10vw;
   padding-top: 6rem;
   gap: 3rem;
+}
+
+.sky-background {
+  opacity: 0.15;
+}
+
+.home-content {
+  min-height: 31.25rem;
+  height: 85%;
+}
+
+.table-design {
+  min-width: 40rem;
 }/*# sourceMappingURL=index.css.map */

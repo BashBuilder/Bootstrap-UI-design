@@ -9,6 +9,7 @@ openSidebar.addEventListener("click", () => {
   sidebar.classList.add("sidebar-open");
   openSidebar.classList.remove("animation-rotate");
   closeSidebar.classList.add("animation-rotate");
+  document.body.style.overflow = "hidden";
 });
 closeSidebar.addEventListener("click", () => {
   sidebar.classList.remove("sidebar-open");
@@ -18,6 +19,7 @@ closeSidebar.addEventListener("click", () => {
 openSidebar2.addEventListener("click", () => {
   sidebar2.classList.add("sidebar2-open");
   closeSidebar2.classList.add("animation-rotate");
+  document.body.style.overflow = "hidden";
 });
 
 closeSidebar2.addEventListener("click", () => {
