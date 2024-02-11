@@ -84,6 +84,11 @@ p {
   margin-bottom: 1.25rem;
 }
 
+header {
+  min-height: 100vh;
+  height: 100%;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 3rem;
