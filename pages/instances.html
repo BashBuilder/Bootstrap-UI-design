@@ -145,27 +145,27 @@
 
         <!-- Instances table -->
         <section class="p-2 p-md-5 container mx-auto">
-          <h2 class="mt-5 mb-3 mb-md-5">Instances</h2>
+          <h2 class="mt-5 mb-3">Instances</h2>
           <!-- table container  -->
-          <div class="overflow-x-scroll">
-            <table class="table table-hover table-design">
+          <div class="overflow-x-auto">
+            <table class="table table-hover table-borderless table-design my-5">
               <thead>
-                <tr class="table-dark rounded-2">
-                  <th scope="col">Name</th>
-                  <th scope="col">Created At</th>
-                  <th scope="col">Environmental Id</th>
-                  <th scope="col">Status</th>
+                <tr class="rounded-4 table-dark">
+                  <th scope="col" class="p-3">Name</th>
+                  <th scope="col" class="p-3">Created At</th>
+                  <th scope="col" class="p-3">Environmental Id</th>
+                  <th scope="col" class="p-3">Status</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="">
-                  <th scope="row">Instance 1</th>
+                  <td>Instance 1</td>
                   <td>24-01-01</td>
                   <td>Default</td>
                   <td class="text-success">Success</td>
                 </tr>
                 <tr>
-                  <th scope="row">Instance 2</th>
+                  <td>Instance 2</td>
                   <td>2024-01-01</td>
                   <td>Default</td>
                   <td class="text-success">Success</td>
@@ -175,9 +175,11 @@
             </table>
             <!-- <button class="custom-button my-4">Create New Instance</button> -->
           </div>
-          <a href="./createInstance.html" class="custom-button my-4"
-            >Create New Instance</a
-          >
+          <div>
+            <a href="./createInstance.html" class="custom-button bg-dark my-4"
+              >Create New Instance</a
+            >
+          </div>
         </section>
       </header>
 

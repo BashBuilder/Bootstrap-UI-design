@@ -72,10 +72,7 @@
               class="d-none d-md-inline h5 fw-normal mt-2 primary-text-color"
               >Timmy</span
             >
-            <i
-              class="fa fa-user fs-4 primary-text-color"
-              aria-hidden="true"
-            ></i>
+            <img src="../img/user.jpeg" alt="user" class="user-img" />
           </button>
         </nav>
 
@@ -85,7 +82,7 @@
           id="sidebar"
         >
           <img
-            src="img/side.jpg"
+            src="../img/side.jpg"
             alt="background"
             class="opacity-25 position-absolute"
           />
@@ -120,7 +117,7 @@
           id="sidebar2"
         >
           <img
-            src="img/side.jpg"
+            src="../img/side.jpg"
             alt="background"
             class="opacity-25 position-absolute"
           />
@@ -143,60 +140,55 @@
           </ul>
         </aside>
 
-        <!-- Instances table -->
+        <!-- Create Instances -->
         <section class="p-4 p-md-5 container mx-auto">
-          <h2 class="mt-3 mb-3 mb-md-5">Edit And Run My Instance Gathers:</h2>
-          <!-- table container  -->
-          <form>
-            <div class="overflow-x-auto">
-              <table class="table table-hover instance-table-edit">
-                <thead>
-                  <tr class="table-dark rounded-2">
-                    <th scope="col">Platform</th>
-                    <th scope="col">Source</th>
-                    <th scope="col">Updating</th>
-                    <th scope="col">Start Date</th>
-                    <th scope="col">End Date</th>
-                    <th scope="col">Last Gather Run</th>
-                    <th scope="col">Delete</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="">
-                    <th scope="row">Facebook</th>
-                    <td>API</td>
-                    <td>Daily</td>
-                    <td class="text-success">2024-01-01</td>
-                    <td class="text-success">2025-01-01</td>
-                    <td class="text-success">2024-01-28</td>
-                    <td class="text-success"><input type="checkbox" /></td>
-                  </tr>
-                  <tr class="">
-                    <th scope="row">Facebook</th>
-                    <td>Platform</td>
-                    <td>None</td>
-                    <td class="text-success">2024-01-01</td>
-                    <td class="text-success">2025-01-01</td>
-                    <td class="text-success">2024-01-28</td>
-                    <td class="text-success"><input type="checkbox" /></td>
-                  </tr>
-                  <tr class="">
-                    <th scope="row">Facebook</th>
-                    <td>Platform</td>
-                    <td>None</td>
-                    <td class="text-success">2024-01-01</td>
-                    <td class="text-success">2025-01-01</td>
-                    <td class="text-success">2024-01-28</td>
-                    <td class="text-success"><input type="checkbox" /></td>
-                  </tr>
-                  <!-- Add more rows as needed -->
-                </tbody>
-              </table>
+          <h2 class="mt-4 mb-3">Add A New Gather</h2>
+          <form class="my-4 d-flex gap-4 flex-column">
+            <div class="input-container">
+              <label for="name">Platform </label>
+              <select
+                name="platform"
+                id="platform"
+                class="form-select d-inline"
+              >
+                <option value="facebook">Facebook</option>
+                <option value="api">Api</option>
+              </select>
             </div>
-            <button class="d-block m-3">
-              <i class="fa fa-plus fs-1" aria-hidden="true"></i>
-            </button>
-            <button class="custom-button my-2">Next</button>
+            <div class="input-container">
+              <label for="environment">Source</label>
+              <select
+                name="platform"
+                id="platform"
+                class="form-select d-inline"
+              >
+                <option value="facebook">Facebook</option>
+                <option value="api">Api</option>
+              </select>
+            </div>
+            <div class="input-container">
+              <label for="environment">Updating</label>
+              <select
+                name="platform"
+                id="platform"
+                class="form-select d-inline"
+              >
+                <option value="facebook" class="opt">Facebook</option>
+                <option value="api" class="opt">Api</option>
+              </select>
+            </div>
+            <div class="input-container">
+              <label for="environment">Start Date</label>
+              <input type="date" />
+            </div>
+            <div class="input-container">
+              <label for="environment">End Date</label>
+              <input type="date" />
+            </div>
+
+            <div>
+              <button type="submit" class="custom-button my-3">Add</button>
+            </div>
           </form>
         </section>
       </header>
@@ -204,6 +196,6 @@
       <!-- instances section  -->
     </main>
 
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

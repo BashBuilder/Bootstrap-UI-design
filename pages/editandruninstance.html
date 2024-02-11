@@ -145,49 +145,33 @@
 
         <!-- Instances table -->
         <section class="p-4 p-md-5 container mx-auto">
-          <h2 class="mt-3 mb-3 mb-md-5">Edit And Run My Instance Gathers:</h2>
+          <h2 class="mt-3 mb-3 mb-md-5">
+            Edit And Run My Instance Inferences :
+          </h2>
           <!-- table container  -->
           <form>
             <div class="overflow-x-auto">
               <table class="table table-hover instance-table-edit">
                 <thead>
                   <tr class="table-dark rounded-2">
-                    <th scope="col">Platform</th>
-                    <th scope="col">Source</th>
-                    <th scope="col">Updating</th>
-                    <th scope="col">Start Date</th>
-                    <th scope="col">End Date</th>
-                    <th scope="col">Last Gather Run</th>
-                    <th scope="col">Delete</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Active</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="">
-                    <th scope="row">Facebook</th>
-                    <td>API</td>
-                    <td>Daily</td>
-                    <td class="text-success">2024-01-01</td>
-                    <td class="text-success">2025-01-01</td>
-                    <td class="text-success">2024-01-28</td>
-                    <td class="text-success"><input type="checkbox" /></td>
+                    <th scope="col">1</th>
+                    <td>Account</td>
+                    <td>Account V1</td>
+                    <td class="text-danger">False</td>
                   </tr>
-                  <tr class="">
-                    <th scope="row">Facebook</th>
-                    <td>Platform</td>
-                    <td>None</td>
-                    <td class="text-success">2024-01-01</td>
-                    <td class="text-success">2025-01-01</td>
-                    <td class="text-success">2024-01-28</td>
-                    <td class="text-success"><input type="checkbox" /></td>
-                  </tr>
-                  <tr class="">
-                    <th scope="row">Facebook</th>
-                    <td>Platform</td>
-                    <td>None</td>
-                    <td class="text-success">2024-01-01</td>
-                    <td class="text-success">2025-01-01</td>
-                    <td class="text-success">2024-01-28</td>
-                    <td class="text-success"><input type="checkbox" /></td>
+                  <tr>
+                    <th scope="col">2</th>
+                    <td>Account</td>
+                    <td>Account V2</td>
+                    <td class="text-success">Active</td>
                   </tr>
                   <!-- Add more rows as needed -->
                 </tbody>
@@ -196,7 +180,7 @@
             <button class="d-block m-3">
               <i class="fa fa-plus fs-1" aria-hidden="true"></i>
             </button>
-            <button class="custom-button my-2">Next</button>
+            <button class="custom-button my-2">Submit</button>
           </form>
         </section>
       </header>
@@ -204,6 +188,6 @@
       <!-- instances section  -->
     </main>
 
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

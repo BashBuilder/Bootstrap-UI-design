@@ -72,10 +72,7 @@
               class="d-none d-md-inline h5 fw-normal mt-2 primary-text-color"
               >Timmy</span
             >
-            <i
-              class="fa fa-user fs-4 primary-text-color"
-              aria-hidden="true"
-            ></i>
+            <img src="img/user.jpeg" alt="user" class="user-img" />
           </button>
         </nav>
 
@@ -144,22 +141,23 @@
         </aside>
 
         <!-- Create Instances -->
-        <section class="p-2 p-md-5 container mx-auto">
-          <h2>Create An Instance</h2>
-          <form>
-            <div>
-              <label for="">Name</label>
-              <input type="text" class="" />
+        <section class="p-4 p-md-5 container mx-auto">
+          <h2 class="mt-4 mb-3">Create An Instance</h2>
+          <form class="my-4 d-flex gap-4 flex-column">
+            <div class="input-container">
+              <label for="name">Name: </label>
+              <input type="text" class="" id="name" />
             </div>
-            <div>
-              <label for="">Environment</label>
-              <input type="text" class="" />
+            <div class="input-container">
+              <label for="environment">Environment :</label>
+              <input type="text" class="" id="environment" />
             </div>
 
-            <button type="submit" class="custom-button">Create</button>
-            <a href="./newInstance.html" class="custom-button my-4"
-              >Create New Instance</a
-            >
+            <div>
+              <button type="submit" class="custom-button my-3">
+                Create An Instance
+              </button>
+            </div>
           </form>
         </section>
       </header>

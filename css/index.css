@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap");
 :root {
   /* colors  */
@@ -43,7 +40,6 @@ main {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background-color: var(--background-main);
   line-height: 1.5;
 }
@@ -153,6 +149,15 @@ button {
   opacity: 0.9;
 }
 
+.user-img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid var(--primary-medium);
+}
+
 .logo {
   max-height: 1.7rem;
 }
@@ -224,6 +229,30 @@ aside ul {
   height: 85%;
 }
 
-.table-design {
-  min-width: 40rem;
+table {
+  min-width: 30rem;
+}
+
+td,
+th {
+  padding: 1rem !important;
+}
+
+.instance-table-edit {
+  min-width: 50rem !important;
+}
+
+.input-container label {
+  min-width: 7rem;
+}
+.input-container input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid var(--primary-medium);
+  background-color: transparent;
+  outline: none;
+}
+.input-container select {
+  width: 10rem;
 }/*# sourceMappingURL=index.css.map */
