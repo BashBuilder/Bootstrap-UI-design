@@ -15,134 +15,121 @@
     <title>Bootstrap UI</title>
   </head>
   <body>
-    <main>
-      <header class="position-relative vh-100 overflow-x-hidden">
-        <!-- background Image  -->
-        <img
-          src="../img/spring1.png"
-          alt="element"
-          class="position-absolute background-canvas opacity-75"
-        />
-        <img
-          src="../img/side.jpg"
-          alt="element"
-          class="position-absolute background-canvas sky-background"
-        />
-        <nav
-          class="d-flex px-4 px-md-5 py-2 gap-2 align-items-center justify-content-between shadow-lg"
+    <main class="position-relative vh-100 overflow-x-hidden">
+      <!-- background Image  -->
+      <img
+        src="../img/spring1.png"
+        alt="element"
+        class="position-absolute background-canvas opacity-75"
+      />
+      <img
+        src="../img/side.jpg"
+        alt="element"
+        class="position-absolute background-canvas sky-background"
+      />
+      <nav
+        class="d-flex px-4 px-md-5 py-2 gap-2 align-items-center justify-content-between shadow-lg"
+      >
+        <button
+          class="d-inline-grid d-md-none py-2 fa-bars-btn"
+          id="open-sidebar"
         >
-          <button
-            class="d-inline-grid d-md-none py-2 fa-bars-btn"
-            id="open-sidebar"
-          >
-            <i
-              class="fa fa-bars fs-2 primary-text-color"
-              aria-hidden="true"
-            ></i>
-          </button>
-          <div class="d-flex gap-2 align-items-center">
-            <img
-              src="../img/logoHolder.png"
-              alt="logo"
-              class="logo img-fluid"
-            />
-            <h3 class="pt-3 primary-text-color">
-              <b>BASH</b>
-            </h3>
-          </div>
-          <ul
-            class="d-none p-0 d-md-flex flex-grow-1 my-auto align-items-center justify-content-around text-white w-75 mx-auto"
-            style="max-width: 40rem"
-          >
-            <li>
-              <a href="../index.html" class="btn navigation-link">Home</a>
-            </li>
-            <li>
-              <a href="./environment.html" class="btn navigation-link"
-                >Environment</a
-              >
-            </li>
-            <li><a href="#" class="btn navigation-link">Instances</a></li>
-          </ul>
-          <button
-            class="d-flex gap-2 align-items-center justify-content-center"
-            id="open-sidebar-2"
-          >
-            <span
-              class="d-none d-md-inline h5 fw-normal mt-2 primary-text-color"
-              >Timmy</span
+          <i class="fa fa-bars fs-2 primary-text-color" aria-hidden="true"></i>
+        </button>
+        <div class="d-flex gap-2 align-items-center">
+          <img src="../img/logoHolder.png" alt="logo" class="logo img-fluid" />
+          <h3 class="pt-3 primary-text-color">
+            <b>BASH</b>
+          </h3>
+        </div>
+        <ul
+          class="d-none p-0 d-md-flex flex-grow-1 my-auto align-items-center justify-content-around text-white w-75 mx-auto"
+          style="max-width: 40rem"
+        >
+          <li>
+            <a href="../index.html" class="btn navigation-link">Home</a>
+          </li>
+          <li>
+            <a href="./environment.html" class="btn navigation-link"
+              >Environment</a
             >
-            <i
-              class="fa fa-user fs-4 primary-text-color"
-              aria-hidden="true"
-            ></i>
-          </button>
-        </nav>
-
-        <!-- sidebar1 -->
-        <aside
-          class="d-md-none position-absolute w-75 secondary-background-dark vh-100 overflow-hidden sidebar"
-          id="sidebar"
+          </li>
+          <li><a href="#" class="btn navigation-link">Instances</a></li>
+        </ul>
+        <button
+          class="d-flex gap-2 align-items-center justify-content-center"
+          id="open-sidebar-2"
         >
-          <img
-            src="img/side.jpg"
-            alt="background"
-            class="opacity-25 position-absolute"
-          />
-          <button class="fa-times-btn" id="close-sidebar">
-            <i class="fa fa-times fs-1 text-danger" aria-hidden="true"> </i>
-          </button>
-          <ul class="d-flex flex-column z-2 vh-100 sidebar-list">
-            <li>
-              <a href="../index.html">
-                <i class="fa fa-home" aria-hidden="true"></i>
-                <span class="h6 fw-normal ps-3">Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-institution" aria-hidden="true"></i>
-                <span class="h6 fw-normal ps-3">Environment</span>
-              </a>
-            </li>
-            <li>
-              <a href="./instances.html">
-                <i class="fa fa-clipboard" aria-hidden="true"></i>
-                <span class="h6 fw-normal ps-3">Instanes</span>
-              </a>
-            </li>
-          </ul>
-        </aside>
+          <span class="d-none d-md-inline h5 fw-normal mt-2 primary-text-color"
+            >Timmy</span
+          >
+          <i class="fa fa-user fs-4 primary-text-color" aria-hidden="true"></i>
+        </button>
+      </nav>
 
-        <!-- sidebar 2 -->
-        <aside
-          class="d-md-none position-absolute w-75 secondary-background-dark vh-100 overflow-hidden sidebar2"
-          id="sidebar2"
-        >
-          <img
-            src="img/side.jpg"
-            alt="background"
-            class="opacity-25 position-absolute"
-          />
-          <button class="fa-times-btn2" id="close-sidebar-2">
-            <i class="fa fa-times fs-1 text-danger" aria-hidden="true"> </i>
-          </button>
-          <ul class="d-flex flex-column z-2 vh-100 sidebar-list">
-            <li>
-              <a href="#">
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-                <span class="h6 fw-normal ps-3">Profile</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-sign-out" aria-hidden="true"></i>
-                <span class="h6 fw-normal ps-3">Logout</span>
-              </a>
-            </li>
-          </ul>
-        </aside>
-      </header>
+      <!-- sidebar1 -->
+      <aside
+        class="d-md-none position-absolute w-75 secondary-background-dark vh-100 overflow-hidden sidebar"
+        id="sidebar"
+      >
+        <img
+          src="img/side.jpg"
+          alt="background"
+          class="opacity-25 position-absolute"
+        />
+        <button class="fa-times-btn" id="close-sidebar">
+          <i class="fa fa-times fs-1 text-danger" aria-hidden="true"> </i>
+        </button>
+        <ul class="d-flex flex-column z-2 vh-100 sidebar-list">
+          <li>
+            <a href="../index.html">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <span class="h6 fw-normal ps-3">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-institution" aria-hidden="true"></i>
+              <span class="h6 fw-normal ps-3">Environment</span>
+            </a>
+          </li>
+          <li>
+            <a href="./instances.html">
+              <i class="fa fa-clipboard" aria-hidden="true"></i>
+              <span class="h6 fw-normal ps-3">Instanes</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- sidebar 2 -->
+      <aside
+        class="d-md-none position-absolute w-75 secondary-background-dark vh-100 overflow-hidden sidebar2"
+        id="sidebar2"
+      >
+        <img
+          src="img/side.jpg"
+          alt="background"
+          class="opacity-25 position-absolute"
+        />
+        <button class="fa-times-btn2" id="close-sidebar-2">
+          <i class="fa fa-times fs-1 text-danger" aria-hidden="true"> </i>
+        </button>
+        <ul class="d-flex flex-column z-2 vh-100 sidebar-list">
+          <li>
+            <a href="#">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <span class="h6 fw-normal ps-3">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+              <span class="h6 fw-normal ps-3">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
     </main>
 
     <script src="js/index.js"></script>

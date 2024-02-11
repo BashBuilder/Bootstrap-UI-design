@@ -36,6 +36,7 @@ Global Styles
 
 main {
   max-width: var(--max-width);
+  min-height: 100vh;
   margin: auto;
 }
 
@@ -257,6 +258,7 @@ th {
   border-bottom: 2px solid var(--primary-medium);
   background-color: transparent;
   outline: none;
+  min-width: 10rem;
 }
 .input-container select {
   width: 10rem;
