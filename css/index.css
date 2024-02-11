@@ -162,13 +162,14 @@ button {
      object-fit: cover;
   z-index: -1;
 }
-.background-canvas aside {
+
+aside {
   top: -1px;
   transition: var(--transition);
   max-width: 25rem;
   min-height: 43.75rem;
 }
-.background-canvas aside ul {
+aside ul {
   padding-left: 10vw;
   padding-top: 6rem;
   gap: 3rem;

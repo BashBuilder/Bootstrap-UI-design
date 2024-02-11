@@ -150,16 +150,16 @@ button {
   object-fit: cover;
   z-index: -1;
   // sidebar styles
-  aside {
-    top: -1px;
-    transition: var(--transition);
-    max-width: 25rem;
-    min-height: 43.75rem;
-    ul {
-      padding-left: 10vw;
-      padding-top: 6rem;
-      gap: 3rem;
-    }
+}
+aside {
+  top: -1px;
+  transition: var(--transition);
+  max-width: 25rem;
+  min-height: 43.75rem;
+  ul {
+    padding-left: 10vw;
+    padding-top: 6rem;
+    gap: 3rem;
   }
 }
 .sidebar {

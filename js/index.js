@@ -30,8 +30,6 @@ const closeSidebar2 = () => {
   document.body.style.overflow = "auto";
 };
 
-const openUserDropdownMenu = () => {};
-
 openSidebarBtn.addEventListener("click", () => openSidebar());
 closeSidebarBtn.addEventListener("click", () => closeSidebar());
 openSidebar2Btn.addEventListener("click", () => openSidebar2());
