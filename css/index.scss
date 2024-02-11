@@ -168,9 +168,11 @@ button {
 }
 .sidebar-open {
   left: 0;
+  top: 0;
 }
 .sidebar2-open {
   right: 0;
+  top: 0;
 }
 
 .navigation-link {
@@ -193,7 +195,7 @@ button {
   left: 1.5rem;
 }
 aside {
-  top: 0;
+  top: -1px;
   transition: var(--transition);
   max-width: 25rem;
   min-height: 43.75rem;

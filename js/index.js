@@ -37,12 +37,12 @@ closeSidebar2Btn.addEventListener("click", () => closeSidebar2());
 // Event listener to close the sidebar when clicking outside
 document.addEventListener("click", function (event) {
   const sidebarPosition = sidebar.getBoundingClientRect().x;
-  const sidebar2Position = sidebar2.getBoundingClientRect().right;
+  const sidebar2Position = sidebar2.getBoundingClientRect().y;
   console.log(sidebar2Position);
   if (!sidebar.contains(event.target) && sidebarPosition === 0) {
     closeSidebar();
   }
-  if (!sidebar2.contains(event.target) && sidebar2Position > 50) {
+  if (!sidebar2.contains(event.target) && sidebar2Position === 0) {
     closeSidebar2();
   }
 });
