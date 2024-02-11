@@ -4,6 +4,7 @@ const closeSidebarBtn = document.getElementById("close-sidebar");
 const sidebar2 = document.getElementById("sidebar2");
 const openSidebar2Btn = document.getElementById("open-sidebar-2");
 const closeSidebar2Btn = document.getElementById("close-sidebar-2");
+const userDropdownMenu = document.getElementById("user-dropdown-menu");
 
 const openSidebar = () => {
   sidebar.classList.add("sidebar-open");
@@ -21,13 +22,15 @@ const closeSidebar = () => {
 const openSidebar2 = () => {
   sidebar2.classList.add("sidebar2-open");
   closeSidebar2Btn.classList.add("animation-rotate");
-  document.body.style.overflow = "hidden";
+  userDropdownMenu.classList.toggle("close-user-dropdown");
 };
 const closeSidebar2 = () => {
   sidebar2.classList.remove("sidebar2-open");
   closeSidebar2Btn.classList.remove("animation-rotate");
   document.body.style.overflow = "auto";
 };
+
+const openUserDropdownMenu = () => {};
 
 openSidebarBtn.addEventListener("click", () => openSidebar());
 closeSidebarBtn.addEventListener("click", () => closeSidebar());

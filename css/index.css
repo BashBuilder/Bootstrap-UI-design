@@ -155,25 +155,23 @@ button {
   opacity: 0.9;
 }
 
-.user-img {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 2px solid var(--primary-medium);
-}
-
-.logo {
-  max-height: 1.7rem;
-}
-
 .background-canvas {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+}
+.background-canvas aside {
+  top: -1px;
+  transition: var(--transition);
+  max-width: 25rem;
+  min-height: 43.75rem;
+}
+.background-canvas aside ul {
+  padding-left: 10vw;
+  padding-top: 6rem;
+  gap: 3rem;
 }
 
 .sidebar {
@@ -192,6 +190,19 @@ button {
 .sidebar2-open {
   right: 0;
   top: 0;
+}
+
+.logo {
+  max-height: 1.7rem;
+}
+
+.user-img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid var(--primary-medium);
 }
 
 .navigation-link {
@@ -216,16 +227,29 @@ button {
   left: 1.5rem;
 }
 
-aside {
-  top: -1px;
+.user-dropdown {
+  right: 2rem;
+  top: 4rem;
+  background-color: rgba(19, 16, 73, 0.5);
+  padding: 1rem 3rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   transition: var(--transition);
-  max-width: 25rem;
-  min-height: 43.75rem;
 }
-aside ul {
-  padding-left: 10vw;
-  padding-top: 6rem;
-  gap: 3rem;
+.user-dropdown button,
+.user-dropdown a {
+  color: white;
+}
+.user-dropdown button:hover,
+.user-dropdown a:hover {
+  opacity: 0.5;
+}
+
+.close-user-dropdown {
+  padding: 0 3rem;
+  max-height: 0px;
 }
 
 .sky-background {
